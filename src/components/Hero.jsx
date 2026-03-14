@@ -15,7 +15,7 @@ function DashboardMockup() {
                     <div className="w-3 h-3 rounded-full bg-red-500/70" />
                     <div className="w-3 h-3 rounded-full bg-yellow-500/70" />
                     <div className="w-3 h-3 rounded-full bg-green-500/70" />
-                    <span className="ml-2 text-xs text-slate-400 font-mono">LoanOS — Dashboard</span>
+                    <span className="ml-2 text-xs text-slate-400 font-mono">AgentOS — Dashboard</span>
                 </div>
 
                 {/* Dashboard content */}
@@ -23,9 +23,9 @@ function DashboardMockup() {
                     {/* Stats row */}
                     <div className="grid grid-cols-3 gap-3">
                         {[
-                            { label: 'Applications', value: '3,412', color: 'text-cyan-400' },
-                            { label: 'Approval Rate', value: '91.8%', color: 'text-emerald-400' },
-                            { label: 'Avg. TAT', value: '6.2 hrs', color: 'text-violet-400' },
+                            { label: 'Tasks Handled', value: '12,450', color: 'text-cyan-400' },
+                            { label: 'Time Saved', value: '420 hrs', color: 'text-emerald-400' },
+                            { label: 'Cost Reduced', value: '68%', color: 'text-violet-400' },
                         ].map((stat) => (
                             <div key={stat.label} className="rounded-xl bg-slate-800/60 p-3 border border-white/5">
                                 <p className="text-xs text-slate-500 mb-1">{stat.label}</p>
@@ -37,8 +37,8 @@ function DashboardMockup() {
                     {/* Chart */}
                     <div className="rounded-xl bg-slate-800/60 p-4 border border-white/5">
                         <div className="flex items-center justify-between mb-3">
-                            <span className="text-xs text-slate-400 font-medium">Loan Volume (30d)</span>
-                            <span className="text-xs text-emerald-400">↑ 31.2%</span>
+                            <span className="text-xs text-slate-400 font-medium">Productivity (30d)</span>
+                            <span className="text-xs text-emerald-400">↑ 312%</span>
                         </div>
                         <svg viewBox="0 0 220 60" className="w-full h-14">
                             <defs>
@@ -66,12 +66,12 @@ function DashboardMockup() {
                     {/* Applications list */}
                     <div className="rounded-xl bg-slate-800/60 border border-white/5 overflow-hidden">
                         <div className="px-4 py-2.5 border-b border-white/5">
-                            <span className="text-xs font-medium text-slate-400">Recent Applications</span>
+                            <span className="text-xs font-medium text-slate-400">Active AI Agents</span>
                         </div>
                         {[
-                            { name: 'Shriram Finance Ltd.', amount: '₹1.8 Cr', status: 'Approved', color: 'text-emerald-400 bg-emerald-400/10' },
-                            { name: 'Muthoot Fincorp', amount: '₹42 L', status: 'Review', color: 'text-amber-400 bg-amber-400/10' },
-                            { name: 'Bajaj Finserv', amount: '₹4.5 Cr', status: 'Approved', color: 'text-emerald-400 bg-emerald-400/10' },
+                            { name: 'Customer Support Agent', amount: '2,490 queries/day', status: 'Online', color: 'text-emerald-400 bg-emerald-400/10' },
+                            { name: 'Data Processing Agent', amount: '1.2M rows/hr', status: 'Processing', color: 'text-amber-400 bg-amber-400/10' },
+                            { name: 'Sales Outreach Agent', amount: '500 leads/day', status: 'Online', color: 'text-emerald-400 bg-emerald-400/10' },
                         ].map((app) => (
                             <div key={app.name} className="flex items-center justify-between px-4 py-2.5 border-b border-white/5 last:border-0">
                                 <div>
@@ -90,19 +90,19 @@ function DashboardMockup() {
             {/* Floating code snippet */}
             <div className="absolute -bottom-4 -left-6 rounded-xl border border-cyan-500/20 bg-slate-900/90 backdrop-blur-xl p-3 text-xs font-mono shadow-xl animate-float-slow">
                 <span className="text-slate-500">{'// '}</span>
-                <span className="text-cyan-400">CIBIL Score</span>
+                <span className="text-cyan-400">Team Size</span>
                 <br />
-                <span className="text-slate-500">score</span>
+                <span className="text-slate-500">employees</span>
                 <span className="text-slate-300">{': '}</span>
-                <span className="text-emerald-400">748</span>
+                <span className="text-emerald-400">3</span>
                 <span className="text-slate-300">{', '}</span>
-                <span className="text-violet-400">approved</span>
+                <span className="text-violet-400">output: enterprise</span>
             </div>
 
             {/* Floating badge */}
             <div className="absolute -top-3 -right-4 rounded-xl border border-blue-500/20 bg-slate-900/90 backdrop-blur-xl px-3 py-2 text-xs shadow-xl animate-float">
-                <span className="text-blue-400 font-semibold">⚡ 6.2 hrs</span>
-                <span className="text-slate-400"> avg TAT</span>
+                <span className="text-blue-400 font-semibold">⚡ 10x</span>
+                <span className="text-slate-400"> Faster</span>
             </div>
         </div>
     );
@@ -133,23 +133,21 @@ export default function Hero({ openModal }) {
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 backdrop-blur-sm">
                             <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
                             <span className="text-xs font-semibold text-cyan-300 tracking-wider uppercase">
-                                Complete Lending Platform Development — LOS + LMS
+                                From Digitalization To Upgradation
                             </span>
                         </div>
 
                         {/* Headline */}
                         <div className="space-y-4">
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05]">
-                                Build a Complete{' '}
-                                <span className="gradient-text">Loan Origination &amp; Management</span>{' '}
-                                Platform in Half the Time.
+                                A company of 3 operating{' '}
+                                <span className="gradient-text">like an Enterprise</span>{' '}
+                                with AI Agents.
                             </h1>
                             <p className="text-lg text-slate-400 leading-relaxed max-w-xl">
-                                Built for Indian{' '}
-                                <span className="text-slate-200 font-medium">NBFCs, Co-operative Banks & FinTechs.</span>{' '}
-                                We build your entire lending stack—custom{' '}
-                                <span className="text-slate-200 font-medium">LOS</span> and{' '}
-                                <span className="text-slate-200 font-medium">LMS</span>—RBI-compliant, secure, and scalable without the bloated IT-vendor price tag.
+                                We help small teams build complex capabilities{' '}
+                                <span className="text-slate-200 font-medium">faster, better, and cheaper.</span>{' '}
+                                Empower your workflow with AI agents and custom-built systems, without bloated IT vendor pricing.
                             </p>
                         </div>
 
@@ -161,7 +159,7 @@ export default function Hero({ openModal }) {
                                 onClick={handleSession}
                                 className="btn-primary flex items-center gap-2 text-base"
                             >
-                                Book Architecture Mapping Session
+                                Contact us for Custom Requirements
                                 <ArrowRight className="w-4 h-4" />
                             </a>
                             <div className="flex items-center gap-2 text-sm text-slate-500 mt-1 sm:mt-3">
@@ -174,17 +172,17 @@ export default function Hero({ openModal }) {
                                         />
                                     ))}
                                 </div>
-                                <span>Free 30-min strategy call</span>
+                                <span>Free discovery call</span>
                             </div>
                         </div>
 
                         {/* Trust signals */}
                         <div className="flex flex-wrap gap-6 pt-2">
                             {[
-                                { icon: '📋', text: 'End-to-End LOS' },
-                                { icon: '⚙️', text: 'Full-Lifecycle LMS' },
-                                { icon: '🏦', text: 'RBI-Compliant' },
-                                { icon: '⚡', text: '2× Faster Delivery' },
+                                { icon: '⚡', text: 'Faster Building' },
+                                { icon: '💎', text: 'Better Quality' },
+                                { icon: '💰', text: 'Cheaper Costs' },
+                                { icon: '🚀', text: 'AI Native' },
                             ].map((item) => (
                                 <div key={item.text} className="flex items-center gap-2 text-sm text-slate-400">
                                     <span>{item.icon}</span>

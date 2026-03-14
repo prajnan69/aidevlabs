@@ -40,14 +40,12 @@ export default function CTA({ openModal }) {
                         {/* Heading */}
                         <div className="space-y-4">
                             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
-                                Ready to modernize your{' '}
-                                <span className="gradient-text">complete lending stack?</span>
+                                Have a custom requirement?{' '}
+                                <span className="gradient-text">Let's make it happen.</span>
                             </h2>
                             <p className="text-lg text-slate-400 max-w-xl mx-auto">
-                                Book a free strategy call to map out your custom LOS + LMS architecture.
-                                Enterprise builds starting at{' '}
-                                <span className="text-white font-semibold">₹8 Lakhs</span>.
-                                No fluff—just a technical deep-dive into your full lending workflow.
+                                Whatever your workflow needs, from AI-powered processors to internal management tools.
+                                Tell us the problem, and we'll build the solution faster, better, and cheaper.
                             </p>
                         </div>
 
@@ -59,23 +57,23 @@ export default function CTA({ openModal }) {
                                 onClick={handleSession}
                                 className="btn-primary flex items-center gap-2 text-base"
                             >
-                                Book Architecture Mapping Session
+                                Get on a Call
                                 <ArrowRight className="w-4 h-4" />
                             </a>
                         </div>
 
                         {/* Micro copy */}
                         <p className="text-xs text-slate-500">
-                            30-minute call · No sales pressure · Walk away with a preliminary architecture outline
+                            30-minute call · Discuss your custom needs · Walk away with a roadmap
                         </p>
 
                         {/* Features row */}
                         <div className="flex flex-wrap justify-center gap-6 pt-2">
                             {[
-                                '✓ Custom LOS — Application to sanction',
-                                '✓ Custom LMS — Disbursement to NOC',
-                                '✓ RBI-compliant architecture',
-                                '✓ Full source code ownership',
+                                '✓ End-to-End Development',
+                                '✓ AI Agent Integration',
+                                '✓ Tailored to Your Needs',
+                                '✓ Full Source Code Ownership',
                             ].map((f) => (
                                 <span key={f} className="text-sm text-slate-400">{f}</span>
                             ))}

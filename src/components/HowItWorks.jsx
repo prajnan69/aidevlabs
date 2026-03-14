@@ -7,11 +7,11 @@ const steps = [
         iconColor: 'text-cyan-400',
         gradientFrom: 'from-cyan-500',
         gradientTo: 'to-blue-600',
-        title: 'Architecture Mapping',
-        subtitle: 'Week 1-2',
+        title: 'Requirement Mapping',
+        subtitle: 'Week 1',
         description:
-            'We design the complete blueprint of your entire lending stack—LOS and LMS. This covers loan products, underwriting policy, credit bureau integrations, disbursement flows, NPA management, RBI compliance requirements, and CBS/core banking integration points.',
-        bullets: ['Full LOS + LMS system architecture', 'CIBIL / CRIF / Experian India integration map', 'RBI & regulatory compliance review', 'Project scope, milestones & pricing'],
+            'We deep dive into your manual processes and identify bottlenecks. Together, we map out how AI agents and custom software can digitize and automate your workflow.',
+        bullets: ['Full system architecture mapping', 'AI integration points identified', 'Workflow optimization plan', 'Project scope, milestones & pricing'],
     },
     {
         number: '02',
@@ -19,11 +19,11 @@ const steps = [
         iconColor: 'text-blue-400',
         gradientFrom: 'from-blue-500',
         gradientTo: 'to-violet-600',
-        title: 'AI-Assisted Build',
-        subtitle: 'Week 3-14',
+        title: 'Rapid AI-Assisted Build',
+        subtitle: 'Week 2-4',
         description:
-            'We build your LOS and LMS in parallel using our AI-accelerated framework—digital application journey, bureau-integrated underwriting, sanction workflow, UPI/NEFT/IMPS disbursement, EMI engine, and borrower self-service portal. Bi-weekly demos throughout.',
-        bullets: ['LOS: Digital onboarding & underwriting', 'LMS: EMI engine, repayments & NPA tracking', 'Borrower portal & admin dashboard', 'Test-driven, fully documented codebase'],
+            'We build your solution using our AI-accelerated frameworks. Whether it’s an internal portal, an employee management system, or a customer-facing app, we deliver functional software in record time.',
+        bullets: ['Custom AI Agents & Integrations', 'Core application development', 'Rapid prototyping', 'Test-driven, fully documented codebase'],
     },
     {
         number: '03',
@@ -31,11 +31,11 @@ const steps = [
         iconColor: 'text-violet-400',
         gradientFrom: 'from-violet-500',
         gradientTo: 'to-pink-600',
-        title: 'Secure Deployment',
-        subtitle: 'Week 14-16',
+        title: 'Upgradation & Handoff',
+        subtitle: 'Week 5',
         description:
-            'Launch your complete LOS + LMS platform on Indian cloud infrastructure (AWS Mumbai / Azure India) with zero technical debt. Full handoff—your team gets source code, documentation, and 30 days of post-launch support.',
-        bullets: ['Cloud deployment (AWS Mumbai / Azure India)', 'CI/CD pipeline & uptime monitoring', '30-day post-launch support', 'Full source code & knowledge transfer'],
+            'Launch your platform on scalable cloud infrastructure. You transition from simple digitalization to true upgradation. Full handoff—your team gets source code, documentation, and support.',
+        bullets: ['Cloud deployment & optimization', 'True operational upgradation', 'Post-launch support', 'Full source code & knowledge transfer'],
     },
 ];
 
@@ -50,11 +50,11 @@ export default function HowItWorks() {
                 <div className="text-center space-y-4 mb-20">
                     <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-400">The Process</p>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
-                        From Requirement to{' '}
-                        <span className="gradient-text">Go-Live</span>
+                        From Digitalization to{' '}
+                        <span className="gradient-text">Upgradation</span>
                     </h2>
                     <p className="text-lg text-slate-400 max-w-xl mx-auto">
-                        A proven three-phase methodology for Indian NBFCs and banks—keeping you in control at every sprint.
+                        A proven fast-track methodology for turning any generic team into an enterprise powerhouse.
                     </p>
                 </div>
 

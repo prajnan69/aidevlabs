@@ -54,6 +54,33 @@ const lmsCards = [
     },
 ];
 
+const emsCards = [
+    {
+        icon: FileText,
+        iconColor: 'text-emerald-400',
+        iconBg: 'bg-emerald-400/10 border-emerald-400/20',
+        title: 'Leaves & Attendance',
+        subtitle: 'EMS — Workforce tracking',
+        body: "Automated leave application, approval workflows, and attendance tracking. Say goodbye to manual spreadsheets and tracking errors.",
+    },
+    {
+        icon: BarChart3,
+        iconColor: 'text-blue-400',
+        iconBg: 'bg-blue-400/10 border-blue-400/20',
+        title: 'Automated Payroll',
+        subtitle: 'EMS — Payslips & settlements',
+        body: "One-click payroll generation, automated tax deductions, and instant payslip distribution to employees. Maintain perfect compliance.",
+    },
+    {
+        icon: Settings,
+        iconColor: 'text-violet-400',
+        iconBg: 'bg-violet-400/10 border-violet-400/20',
+        title: 'In-house Management',
+        subtitle: 'EMS — Core HR operations',
+        body: "Centralized employee directory, performance reviews, and asset management. Everything you need to manage your growing team securely and efficiently.",
+    },
+];
+
 function CardGrid({ cards }) {
     return (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -98,13 +125,13 @@ export default function Services() {
             <div className="max-w-7xl mx-auto px-6 lg:px-8 space-y-20">
                 {/* Section header */}
                 <div className="text-center space-y-4">
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-400">Why AIDev Labs</p>
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-400">Past Capabilities</p>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
-                        Why legacy core-banking vendors{' '}
-                        <span className="gradient-text">are slowing your NBFC down.</span>
+                        What we have{' '}
+                        <span className="gradient-text">done before.</span>
                     </h2>
                     <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-                        We build the complete lending stack—from the moment a borrower applies, to the moment the loan is closed and the NOC is issued.
+                        We build robust, scalable applications tailored to custom requirements. From financial engines to internal management tools.
                     </p>
                 </div>
 
@@ -130,6 +157,18 @@ export default function Services() {
                         The engine running after sanction. Disburse via UPI/NEFT/IMPS, collect EMIs, track NPA, generate MIS reports, and keep borrowers self-served—from disbursement to NOC.
                     </p>
                     <CardGrid cards={lmsCards} />
+                </div>
+
+                {/* EMS block */}
+                <div className="space-y-6">
+                    <div className="flex items-center gap-4">
+                        <SectionLabel color="text-emerald-400 border-emerald-400/30 bg-emerald-400/10" label="End-to-End Employee Management System" />
+                        <div className="flex-1 h-px bg-white/5" />
+                    </div>
+                    <p className="text-sm text-slate-500 max-w-xl">
+                        A centralized platform for managing leaves, processing payroll with automated payslips, and handling comprehensive in-house operations. Built for complete administrative command.
+                    </p>
+                    <CardGrid cards={emsCards} />
                 </div>
             </div>
         </section>
